@@ -1,0 +1,24 @@
+{
+  "name": "page-stash",
+  "version": "1.0.0",
+  "description": "A web service for storing links and reading them later",
+  "main": "index.js",
+  "scripts": {
+    "hint": "eslint index.js lib test",
+    "start": "node index.js",
+    "test": "npm run hint && mocha"
+  },
+  "author": "Brendan Long <self@brendanlong.com>",
+  "license": "Unlicense",
+  "devDependencies": {
+    "better-assert": "^1.0.2",
+    "eslint": "^3.11.1",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "koa": "^1.2.4",
+    "sequelize": "^3.27.0",
+    "vue": "^2.1.4",
+    "yargs": "^6.5.0"
+  }
+}
