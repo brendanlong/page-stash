@@ -3,6 +3,7 @@
 const yargs = require("yargs");
 
 const app = require("./lib/app");
+const log = require("./lib/log");
 
 
 const args = yargs
@@ -13,4 +14,6 @@ const args = yargs
     })
     .argv;
 
-app.listen(args.port);
+app.listen(args.port, () => {
+    log.info({port: args.port}, "Listening on port %s", args.port);
+});
